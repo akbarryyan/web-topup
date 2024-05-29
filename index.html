@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Akbar Rayyan | Tailwind CSS</title>
+  </head>
+  <body class="font-['Lato']">
+    <div
+      id="nav-content"
+      class="hidden md:hidden bg-black absolute py-4 pe-32 ps-4 h-screen"
+    >
+      <div class="flex items-center justify-between">
+        <img
+          src="https://www.antimage.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fa8ad8dbe-d697-4d1a-8049-22594f19a743.png&w=384&q=75"
+          class="w-[50px] mb-5"
+        />
+        <i
+          id="nav-closed"
+          class="ri-close-line text-white text-4xl absolute right-4 top-5 cursor-pointer"
+        ></i>
+      </div>
+      <span
+        class="border w-full border-solid block border-slate-800 mb-5 ml-5"
+      ></span>
+      <ul class="text-white flex flex-col gap-6 ml-5 font-bold">
+        <li>
+          <a href=""> Beranda </a>
+        </li>
+        <li>
+          <a href=""> Cek Transaksi </a>
+        </li>
+        <li>
+          <a href=""> Kalkulator </a>
+        </li>
+      </ul>
+      <div
+        class="w-full border-t border-b border-slate-800 border-solid py-5 mt-8 ml-5"
+      >
+        <h1 class="text-white font-bold cursor-pointer">Hubungi Kami</h1>
+      </div>
+    </div>
+    <!-- NAVBAR START -->
+    <div class="container max-w-full top-0 left-0 bg-zinc-800">
+      <div
+        class="w-full flex items-center justify-between py-1 px-4 md:py-2 md:px-32"
+      >
+        <div class="flex items-center gap-2">
+          <i
+            class="ri-menu-2-line text-2xl text-white bg-slate-700 px-2 py-1 rounded-md cursor-pointer md:hidden"
+            id="nav-toggle"
+          ></i>
+          <img
+            src="https://www.antimage.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fa8ad8dbe-d697-4d1a-8049-22594f19a743.png&w=384&q=75"
+            class="w-[50px]"
+          />
+          <div class="hidden md:flex items-center">
+            <ul class="md:flex items-center gap-8 text-white">
+              <li>
+                <a href="">
+                  <i class="ri-home-4-line"></i>
+                  Beranda
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="ri-search-line"></i>
+                  Cek Transaksi
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="ri-calculator-fill"></i>
+                  Kalkulator
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <i
+            class="ri-search-line text-2xl text-white bg-slate-700 px-2 py-1 rounded-md cursor-pointer md:hidden"
+          ></i>
+          <i
+            class="ri-search-line hidden md:flex bg-transparent border text-white cursor-pointer px-3 py-1 rounded-md items-center gap-2 hover:bg-slate-900"
+            >Search</i
+          >
+          <p class="text-white">ID <i class="ri-arrow-down-s-line"></i></p>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+    <!-- BANNER START-->
+    <section class="bg-zinc-700 max-w-full">
+      <div class="w-full py-3 px-3 md:px-32 flex items-center justify-center">
+        <img
+          src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fcdn.ourastore.com%2Fourastorebanner%2F1cfba542-0878-4747-8f67-89cf2a606c86.jpg&w=640&q=75"
+          class="rounded-2xl w-[430px] md:hidden"
+        />
+        <img
+          src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fcdn.ourastore.com%2Fourastorebanner%2F1cfba542-0878-4747-8f67-89cf2a606c86.jpg&w=1920&q=75"
+          class="rounded-2xl hidden md:block"
+        />
+      </div>
+    </section>
+    <!-- BANNER END -->
+    <section class="bg-zinc-800 px-3 py-7 md:px-32">
+      <div class="flex items-center gap-1">
+        <i class="ri-fire-fill text-xl text-red-600"></i>
+        <h1 class="text-md text-white font-bold uppercase tracking-widest">
+          Populer
+        </h1>
+      </div>
+      <!-- PRODUCT POPULER START -->
+      <div class="grid grid-cols-2 gap-3 mt-3 cursor-pointer md:grid-cols-3">
+        <!-- PRODUCT POPULER 1 -->
+        <div
+          class="bg-[#1C1C1C] w-[210px] h-[60px] md:w-[410px] md:h-[100px] flex items-center gap-2 py-2 px-1 md:px-3 rounded-md md:rounded-xl"
+        >
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fcdn.ourastore.com%2Fcc355cc5-83f1-4691-aec1-b879f9c5c2a4.jpg&w=640&q=75"
+            class="h-[55px] w-[55px] rounded-md md:w-[71px] md:h-[80px] md:rounded-xl"
+          />
+          <p class="text-[12px] md:text-[18px] text-white font-bold">
+            Mobile Legends <br />
+            <span class="font-light text-[11px] md:text-[16px]">Moonton</span>
+          </p>
+        </div>
+        <!-- PRODUCT POPULER 2 -->
+        <div
+          class="bg-[#1C1C1C] w-[210px] h-[60px] md:w-[410px] md:h-[100px] flex items-center gap-2 py-2 px-1 md:px-3 rounded-md md:rounded-xl"
+        >
+          <img
+            src="https://www.antimage.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2F2b2b481e-89fe-474f-a27d-be791df405cb.jpg&w=640&q=75"
+            class="h-[55px] rounded-md md:w-[71px] md:h-[80px] md:rounded-xl"
+          />
+          <p class="text-[12px] md:text-[18px] text-white font-bold">
+            Free Fire <br />
+            <span class="font-light text-[11px] md:text-[16px]">Garena</span>
+          </p>
+        </div>
+        <!-- PRODUCT POPULER 3 -->
+        <div
+          class="bg-[#1C1C1C] w-[210px] h-[60px] md:w-[410px] md:h-[100px] flex items-center gap-2 py-2 px-1 md:px-3 rounded-md md:rounded-xl"
+        >
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fb94ea08a-6890-4dfd-8073-7b8479722504.png&w=640&q=75"
+            class="h-[55px] rounded-md md:w-[71px] md:h-[80px] md:rounded-xl"
+          />
+          <p class="text-[12px] md:text-[18px] text-white font-bold">
+            Pubg Mobile <br />
+            <span class="font-light text-[11px] md:text-[16px]">Tencent</span>
+          </p>
+        </div>
+        <!-- PRODUCT POPULER 4 -->
+        <div
+          class="bg-[#1C1C1C] w-[210px] h-[60px] md:w-[410px] md:h-[100px] flex items-center gap-2 py-2 px-1 md:px-3 rounded-md md:rounded-xl"
+        >
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2F7881fb56-29c7-4baa-9e1e-539615b1d0aa.jpg&w=640&q=75"
+            class="h-[55px] rounded-md md:w-[71px] md:h-[80px] md:rounded-xl"
+          />
+          <p class="text-[12px] md:text-[18px] text-white font-bold">
+            Valorant <br />
+            <span class="font-light text-[11px] md:text-[16px]"
+              >Riot Games</span
+            >
+          </p>
+        </div>
+        <!-- PRODUCT POPULER 5 -->
+        <div
+          class="bg-[#1C1C1C] w-[210px] h-[60px] md:w-[410px] md:h-[100px] flex items-center gap-2 py-2 px-1 md:px-3 rounded-md md:rounded-xl"
+        >
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fcdn.ourastore.com%2F3d715234-e5bd-4d95-9a20-9b7eb63a90d8.jpg&w=640&q=75"
+            class="h-[55px] rounded-md md:w-[71px] md:h-[80px] md:rounded-xl"
+          />
+          <p class="text-[12px] md:text-[18px] text-white font-bold">
+            Honor of Kings <br />
+            <span class="font-light text-[11px] md:text-[16px]"
+              >Tencent Games</span
+            >
+          </p>
+        </div>
+        <!-- PRODUCT POPULER 6 -->
+        <div
+          class="bg-[#1C1C1C] w-[210px] h-[60px] md:w-[410px] md:h-[100px] flex items-center gap-2 py-2 px-1 md:px-3 rounded-md md:rounded-xl"
+        >
+          <img
+            src="https://www.antimage.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fbbcbed30-004a-490e-80da-6da748fe302f.jpg&w=640&q=75"
+            class="h-[55px] rounded-md md:w-[71px] md:h-[80px] md:rounded-xl"
+          />
+          <p class="text-[12px] md:text-[18px] text-white font-bold">
+            Genshin Impact <br />
+            <span class="font-light text-[11px] md:text-[16px]">HoYoverse</span>
+          </p>
+        </div>
+        <!-- PRODUCT POPULER 7 -->
+        <div
+          class="bg-[#1C1C1C] w-[210px] h-[60px] md:w-[410px] md:h-[100px] flex items-center gap-2 py-2 px-1 md:px-3 rounded-md md:rounded-xl"
+        >
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2F741e9167-79ff-4e4d-bd71-f9ddb26b173b.jpg&w=1920&q=75"
+            class="h-[55px] rounded-md md:w-[71px] md:h-[80px] md:rounded-xl"
+          />
+          <p class="text-[12px] md:text-[18px] text-white font-bold">
+            Call of Duty Mobile <br />
+            <span class="font-light text-[11px] md:text-[16px]">Garena</span>
+          </p>
+        </div>
+        <!-- PRODUCT POPULER 8 -->
+        <div
+          class="bg-[#1C1C1C] w-[210px] h-[60px] md:w-[410px] md:h-[100px] flex items-center gap-2 py-2 px-1 md:px-3 rounded-md md:rounded-xl"
+        >
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fcc5bf754-7177-44a3-8843-1979db5e0eae.jpg&w=1920&q=75"
+            class="h-[55px] rounded-md md:w-[71px] md:h-[80px] md:rounded-xl"
+          />
+          <p class="text-[12px] md:text-[18px] text-white font-bold">
+            League of Legends : Wil... <br />
+            <span class="font-light text-[11px] md:text-[16px]"
+              >Riot Games</span
+            >
+          </p>
+        </div>
+        <!-- PRODUCT POPULER 9 -->
+        <div
+          class="bg-[#1C1C1C] w-[210px] h-[60px] md:w-[410px] md:h-[100px] md:flex md:items-center gap-2 py-2 px-1 md:px-3 rounded-md md:rounded-xl hidden"
+        >
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2F41e1b5a0-ffac-494f-8104-8bcfbb0de9cb.webp&w=1920&q=75"
+            class="h-[55px] rounded-md md:w-[71px] md:h-[80px] md:rounded-xl"
+          />
+          <p class="text-[12px] md:text-[18px] text-white font-bold">
+            Clash of Clans <br />
+            <span class="font-light text-[11px] md:text-[16px]">Supercell</span>
+          </p>
+        </div>
+      </div>
+      <!-- PRODUCT POPULER END -->
+    </section>
+    <!-- CATEGORY START -->
+    <section class="bg-zinc-800 max-w-full px-3 py-1 md:px-32">
+      <div class="w-full flex items-center gap-4">
+        <div
+          class="bg-[#876B4A] py-1 px-3 md:px-6 md:py-2 rounded-2xl cursor-pointer"
+        >
+          <h1 class="text-white text-[14px] md:text-[18px]">Top Up Games</h1>
+        </div>
+        <div
+          class="bg-transparent border-solid border border-white py-1 px-3 rounded-2xl cursor-pointer"
+        >
+          <h1 class="text-white text-[14px] md:text-[18px]">Joki</h1>
+        </div>
+        <div
+          class="bg-transparent border-solid border border-white py-1 px-3 rounded-2xl cursor-pointer"
+        >
+          <h1 class="text-white text-[14px] md:text-[18px]">Pulsa & Data</h1>
+        </div>
+        <div
+          class="bg-transparent border-solid border border-white py-1 px-3 rounded-2xl cursor-pointer"
+        >
+          <h1 class="text-white text-[14px] md:text-[18px]">Voucher</h1>
+        </div>
+      </div>
+      <!-- CATEGORY END -->
+      <!-- ALL PRODUCT START -->
+      <div class="mt-7 grid grid-cols-3 gap-4 md:grid-cols-6">
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fcdn.ourastore.com%2Fcc355cc5-83f1-4691-aec1-b879f9c5c2a4.jpg&w=1080&q=75"
+            class="rounded-2xl"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2F2b2b481e-89fe-474f-a27d-be791df405cb.jpg&w=1080&q=75"
+            class="rounded-2xl h-[170px] md:h-[265px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2F7881fb56-29c7-4baa-9e1e-539615b1d0aa.jpg&w=640&q=75"
+            class="rounded-2xl h-[170px] md:h-[265px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.antimage.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fbbcbed30-004a-490e-80da-6da748fe302f.jpg&w=640&q=75"
+            class="rounded-2xl h-[170px] md:h-[265px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fb94ea08a-6890-4dfd-8073-7b8479722504.png&w=640&q=75"
+            class="rounded-2xl h-[170px] md:h-[265px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fcdn.ourastore.com%2F3d715234-e5bd-4d95-9a20-9b7eb63a90d8.jpg&w=640&q=75"
+            class="rounded-2xl h-[170px] md:h-[265px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2F9470379d-1836-4297-a582-b9f41eaa3789.webp&w=1080&q=75"
+            class="rounded-2xl h-[170px] md:h-[268px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2F0744c20a-06d2-4b0a-af0c-8335897c73a6.webp&w=1080&q=75"
+            class="rounded-2xl h-[170px] md:h-[265px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2F741e9167-79ff-4e4d-bd71-f9ddb26b173b.jpg&w=1080&q=75"
+            class="rounded-2xl h-[170px] md:h-[265px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fcdn.ourastore.com%2F2e96a9cd-a740-499e-a140-ff1963c6cf6c.jpg&w=1080&q=75"
+            class="rounded-2xl h-[170px] md:h-[265px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fcc5bf754-7177-44a3-8843-1979db5e0eae.jpg&w=1080&q=75"
+            class="rounded-2xl h-[170px] md:h-[268px]"
+          />
+        </div>
+        <div class="cursor-pointer">
+          <img
+            src="https://www.ourastore.com/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Feb2e29bd-78d5-41db-9712-f3e6c55d73a0.jpg&w=1080&q=75"
+            class="rounded-2xl h-[170px] md:h-[265px]"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center items-center my-3">
+        <button class="bg-slate-700 py-2 px-3 rounded-lg text-white text-sm">
+          Tampilkan Lainnya...
+        </button>
+      </div>
+      <!-- ALL PRODUCT END -->
+    </section>
+    <!-- CATEGORY END -->
+    <!-- BEFORE FOOTER START MOBILE -->
+    <section class="bg-[#2F3439] max-w-full py-2 px-4 md:hidden">
+      <div class="w-full">
+        <img
+          src="https://www.antimage.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fa8ad8dbe-d697-4d1a-8049-22594f19a743.png&w=384&q=75"
+          class="w-[60px]"
+        />
+        <p class="text-white font-semibold text-sm mt-4">
+          Top up game & voucher terlaris, murah, aman legal 100% buka 24 Jam
+          dengan payment terlengkap se-Indonesia.
+        </p>
+        <div class="flex items-center gap-4 mt-4">
+          <i class="ri-instagram-line text-4xl"></i>
+          <i class="ri-youtube-fill text-4xl text-red-600"></i>
+          <i class="ri-tiktok-fill text-4xl"></i>
+        </div>
+      </div>
+    </section>
+    <!-- BEFORE FOOTER END MOBILE -->
+    <!-- FOOTER START MOBILE-->
+    <section class="bg-[#2F3439] py-8 px-4 md:hidden">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col gap-2">
+          <h1
+            class="text-white font-bold border-b border-yellow-600 w-[105px] border-solid"
+          >
+            Social Media
+          </h1>
+          <a class="flex items-center gap-2 text-white text-sm" href="#">
+            <i class="ri-instagram-line text-2xl"></i>
+            Instagram
+          </a>
+          <a class="flex items-center gap-2 text-white text-sm" href="#">
+            <i class="ri-youtube-fill text-2xl text-red-600"></i>
+            Youtube
+          </a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1
+            class="text-white font-bold border-b border-yellow-600 w-[95px] border-solid"
+          >
+            Dukungan
+          </h1>
+          <a class="flex items-center gap-2 text-white text-sm" href="#">
+            <i class="ri-whatsapp-line text-2xl"></i>
+            Whatsapp
+          </a>
+          <a class="flex items-center gap-2 text-white text-sm" href="#">
+            <i class="ri-instagram-line text-2xl"></i>
+            Instagram
+          </a>
+          <a class="flex items-center gap-2 text-white text-sm" href="#">
+            <i class="ri-mail-line text-2xl"></i>
+            Email
+          </a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1
+            class="text-white font-bold border-b border-yellow-600 w-[105px] border-solid"
+          >
+            Peta Situs
+          </h1>
+          <a class="text-white text-sm" href="#"> Beranda </a>
+          <a class="text-white text-sm" href="#"> Cek Transaksi </a>
+          <a class="text-white text-sm" href="#"> Hubungi Kami </a>
+          <a class="text-white text-sm" href="#"> Ulasan </a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1
+            class="text-white font-bold border-b border-yellow-600 w-[95px] border-solid"
+          >
+            Legalitas
+          </h1>
+          <a class="text-white text-sm" href="#"> Kebijakan Pribadi </a>
+          <a class="text-white text-sm" href="#"> Syarat & Ketentuan </a>
+        </div>
+      </div>
+    </section>
+    <div
+      class="md:hidden w-full border border-solid border-b border-zinc-600 bg-[#2F3439] py-6 px-4"
+    >
+      <h1 class="text-[12px] text-white">
+        &copy 2024 AKBAR RAYYAN. All rights reserved.
+      </h1>
+    </div>
+    <!-- FOOTER END MOBILE -->
+    <!-- FOOTER START DESKTOP-->
+    <section
+      class="bg-[#2F3439] max-w-full py-2 px-4 hidden md:py-12 md:px-32 md:flex md:items-center"
+    >
+      <div>
+        <img
+          src="https://www.antimage.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fa8ad8dbe-d697-4d1a-8049-22594f19a743.png&w=384&q=75"
+          class="w-[60px]"
+        />
+        <p class="text-white font-semibold text-sm mt-4 w-[380px]">
+          Top up game & voucher terlaris, murah, aman legal 100% buka 24 Jam
+          dengan payment terlengkap se-Indonesia.
+        </p>
+        <div class="flex items-center gap-4 mt-4">
+          <i class="ri-instagram-line text-4xl"></i>
+          <i class="ri-youtube-fill text-4xl text-red-600"></i>
+          <i class="ri-tiktok-fill text-4xl"></i>
+        </div>
+      </div>
+      <div class="hidden md:block md:ml-12">
+        <div class="flex gap-32">
+          <div class="flex flex-col gap-2">
+            <h1
+              class="text-white font-bold border-b border-yellow-600 w-[105px] border-solid"
+            >
+              Social Media
+            </h1>
+            <a class="flex items-center gap-2 text-white text-sm" href="#">
+              <i class="ri-instagram-line text-2xl"></i>
+              Instagram
+            </a>
+            <a class="flex items-center gap-2 text-white text-sm" href="#">
+              <i class="ri-youtube-fill text-2xl text-red-600"></i>
+              Youtube
+            </a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h1
+              class="text-white font-bold border-b border-yellow-600 w-[95px] border-solid"
+            >
+              Dukungan
+            </h1>
+            <a class="flex items-center gap-2 text-white text-sm" href="#">
+              <i class="ri-whatsapp-line text-2xl"></i>
+              Whatsapp
+            </a>
+            <a class="flex items-center gap-2 text-white text-sm" href="#">
+              <i class="ri-instagram-line text-2xl"></i>
+              Instagram
+            </a>
+            <a class="flex items-center gap-2 text-white text-sm" href="#">
+              <i class="ri-mail-line text-2xl"></i>
+              Email
+            </a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h1
+              class="text-white font-bold border-b border-yellow-600 w-[105px] border-solid"
+            >
+              Peta Situs
+            </h1>
+            <a class="text-white text-sm" href="#"> Beranda </a>
+            <a class="text-white text-sm" href="#"> Cek Transaksi </a>
+            <a class="text-white text-sm" href="#"> Hubungi Kami </a>
+            <a class="text-white text-sm" href="#"> Ulasan </a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h1
+              class="text-white font-bold border-b border-yellow-600 w-[95px] border-solid"
+            >
+              Legalitas
+            </h1>
+            <a class="text-white text-sm" href="#"> Kebijakan Pribadi </a>
+            <a class="text-white text-sm" href="#"> Syarat & Ketentuan </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="md:block hidden w-full border border-solid border-b border-zinc-600 bg-[#2F3439] py-6 px-32"
+    >
+      <h1 class="text-[12px] text-white">
+        &copy 2024 AKBAR RAYYAN. All rights reserved.
+      </h1>
+    </div>
+
+    <script>
+      document
+        .getElementById("nav-toggle")
+        .addEventListener("click", function () {
+          var navContent = document.getElementById("nav-content");
+          navContent.classList.toggle("hidden");
+        });
+
+      document
+        .getElementById("nav-closed")
+        .addEventListener("click", function () {
+          var navContent = document.getElementById("nav-content");
+          navContent.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
